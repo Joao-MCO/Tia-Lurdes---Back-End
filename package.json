@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Esse é o o sistema backend do site Massas Tia Lurdes",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --clear src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --clear src/app.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "vercel-build": "npm run build"
   },
   "dependencies": {
