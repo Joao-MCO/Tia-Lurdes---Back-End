@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --clear src/index.ts",
     "build": "npm ci && tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "axios": "^1.6.7",
