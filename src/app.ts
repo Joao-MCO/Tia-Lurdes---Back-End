@@ -5,13 +5,8 @@ import { router } from "./routes";
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT) || 9010;
 
 app.use(express.json());
 app.use("/api", router)
-
-const server = app.listen(PORT, () => {
-  console.log(`Iniciando aplicação na porta *${PORT}*...`);
-});
 
 export default app;

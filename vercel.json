@@ -3,6 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "routes": [
-    { "src": "/(.*)", "dest": "/dist/app.js" }
+    { "src": "/(.*)", "dest": "/dist/index.js" }
   ]
 }
