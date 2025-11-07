@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Esse é o o sistema backend do site Massas Tia Lurdes",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --clear src/index.ts",
+    "build": "npm ci && tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.19.3",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.25.17"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.22",
+    "@types/node": "^20.11.19",
+    "@types/swagger-ui-express": "^4.1.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
