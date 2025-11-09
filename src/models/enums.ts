@@ -15,3 +15,14 @@ export enum Role{
     VENDEDOR="Vendedor",
     CLIENTE="Cliente"
 }
+
+export enum ContactType{
+    PARCERIA="Parceria",
+    COMPRA="Compra",
+    OUTROS="Outros"
+}
+
+export enum DocType{
+    CPF="CPF",
+    CNPJ="CNPJ"
+}
