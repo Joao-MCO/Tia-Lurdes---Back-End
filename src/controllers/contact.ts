@@ -16,7 +16,7 @@ export const contactController = {
             };
             
             await emailService.sendMail(mailOptions);
-            return res.status(200).json({message: "Mensagem enviada com sucesso!"});
+            return res.status(200).json({status: "success", message: "Mensagem enviada com sucesso!"});
 
         }catch(error: any){
             console.error("ERRO AO ENVIAR EMAIL DE CONTATO: ", error);
@@ -25,6 +25,7 @@ export const contactController = {
                 ? "Não foi possível conectar ao servidor de email"
                 : "Erro ao enviar email de contato";
             return res.status(500).json({ 
+                status: "error",
                 error: errorMessage,
                 details: process.env.NODE_ENV === 'development' ? error.message : undefined
             });
