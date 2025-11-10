@@ -7,13 +7,7 @@ export const contactController = {
         try{
             console.log("REQUISIÇÃO DE CONTATO: ", req.body);
             const {name, email, document, phone, type, message, docType} = req.body;
-            const messageBody = `Nome: ${name}
-                Email: ${email}
-                Pessoa Física/Jurídica: ${docType}
-                Documento: ${document}
-                Telefone: ${phone}
-                Tipo de Contato: ${type}
-                Mensagem: ${message || "N/A"}`;
+            const messageBody = `Nome: ${name}\nEmail: ${email}\nPessoa Física/Jurídica: ${docType}\nDocumento: ${document}\nTelefone: ${phone}\nTipo de Contato: ${type}\nMensagem: ${message || "N/A"}`;
             const mailOptions = {
                 from: process.env.EMAIL_USER,
                 to: process.env.EMAIL_DESTINY,
